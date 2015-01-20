@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bill>
+<BillId>14</BillId>
+<CustomerId>C1234567</CustomerId>
+<ConnectionId>8589632565</ConnectionId>
+<Amount>324.64</Amount>
+<GenerationDate>2014-11-20</GenerationDate>
+<Year>2014</Year>
+<Month>10</Month>
+<Arrears>0.00</Arrears>
+<Advanced Payment>0.00</Advanced Payment>
+<Discount>6.49</Discount>
+<Total>318.15</Total>
+</Bill>

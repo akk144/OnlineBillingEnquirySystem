@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E27569FC-BD35-4F99-9860-D9A7C6C89617}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Downloads\AjaxControlToolkit.Binary.NET40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About Us.aspx" />
+    <Content Include="AddBill.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="Contact Us.aspx" />
+    <Content Include="CSS\agency.css" />
+    <Content Include="CSS\bootstrap-responsive.min.css" />
+    <Content Include="CSS\bootstrap-responsive1.min.css" />
+    <Content Include="CSS\bootstrap-theme.css" />
+    <Content Include="CSS\bootstrap-theme.min.css" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\footable-0.1.css" />
+    <Content Include="CSS\footable.core.css" />
+    <Content Include="CSS\footable.core.min.css" />
+    <Content Include="CSS\footable.metro.css" />
+    <Content Include="CSS\footable.metro.min.css" />
+    <Content Include="CSS\footable.standalone.css" />
+    <Content Include="CSS\footable.standalone.min.css" />
+    <Content Include="CSS\grayscale.css" />
+    <Content Include="CustomerHome.aspx" />
+    <Content Include="DisputeAdd.aspx" />
+    <Content Include="DisputeUpdateAdmin.aspx" />
+    <Content Include="DisputeViewAllandSearch.aspx" />
+    <Content Include="DisputeViewCustomer.aspx" />
+    <Content Include="CustomerView.aspx" />
+    <Content Include="Document Repository\sample.xml" />
+    <Content Include="font-awesome-4.1.0\css\font-awesome.css" />
+    <Content Include="font-awesome-4.1.0\css\font-awesome.min.css" />
+    <Content Include="font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\10.jpg" />
+    <Content Include="Images\108_0864.JPG" />
+    <Content Include="Images\11.gif" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\2012_antenna_0060 %281%29.jpg" />
+    <Content Include="Images\2012_antenna_0060 %282%29.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\6.jpg" />
+    <Content Include="Images\7.jpg" />
+    <Content Include="Images\8.jpg" />
+    <Content Include="Images\9.jpg" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\billboard.jpg" />
+    <Content Include="Images\billboard2.jpg" />
+    <Content Include="Images\calendericon.jpg" />
+    <Content Include="Images\customer1.jpg" />
+    <Content Include="Images\Customer2.jpg" />
+    <Content Include="Images\customer3.jpg" />
+    <Content Include="Images\customer4.jpg" />
+    <Content Include="Images\customer5.png" />
+    <Content Include="Images\customer6.jpg" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\header-bg.jpg" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\intro-bg.jpg" />
+    <Content Include="Images\log.jpg" />
+    <Content Include="Images\log1.png" />
+    <Content Include="Images\login1.jpg" />
+    <Content Include="Images\login2.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logo1.png" />
+    <Content Include="Images\new3.jpg" />
+    <Content Include="Images\P5366533_10192012104907AM.JPG" />
+    <Content Include="Images\professional1.jpg" />
+    <Content Include="Images\shadow.png" />
+    <Content Include="Images\sn1 %281%29.jpg" />
+    <Content Include="Images\sn1 %282%29.jpg" />
+    <Content Include="Images\sn1 %283%29.jpg" />
+    <Content Include="Images\sne.jpg" />
+    <Content Include="Images\sne1.jpg" />
+    <Content Include="Images\snehal.jpg" />
+    <Content Include="img\about\1.jpg" />
+    <Content Include="img\about\2.jpg" />
+    <Content Include="img\about\3.jpg" />
+    <Content Include="img\about\4.jpg" />
+    <Content Include="img\header-bg.jpg" />
+    <Content Include="img\logos\Admin.jpg" />
+    <Content Include="img\logos\aetuts.jpg" />
+    <Content Include="img\logos\creative-market.jpg" />
+    <Content Include="img\logos\customer.png" />
+    <Content Include="img\logos\designmodo.jpg" />
+    <Content Include="img\logos\envato.jpg" />
+    <Content Include="img\logos\microlancer.jpg" />
+    <Content Include="img\logos\themeforest.jpg" />
+    <Content Include="img\logos\wordpress.jpg" />
+    <Content Include="img\minus.png" />
+    <Content Include="img\plus.png" />
+    <Content Include="img\portfolio\dreams-preview.png" />
+    <Content Include="img\portfolio\dreams.png" />
+    <Content Include="img\portfolio\escape-preview.png" />
+    <Content Include="img\portfolio\escape.png" />
+    <Content Include="img\portfolio\golden-preview.png" />
+    <Content Include="img\portfolio\golden.png" />
+    <Content Include="img\portfolio\roundicons-free.png" />
+    <Content Include="img\portfolio\roundicons.png" />
+    <Content Include="img\portfolio\startup-framework-preview.png" />
+    <Content Include="img\portfolio\startup-framework.png" />
+    <Content Include="img\portfolio\treehouse-preview.png" />
+    <Content Include="img\portfolio\treehouse.png" />
+    <Content Include="img\team\1.jpg" />
+    <Content Include="img\team\2.jpg" />
+    <Content Include="img\team\3.jpg" />
+    <Content Include="Javascript\agency.js" />
+    <Content Include="Javascript\bootstrap.js" />
+    <Content Include="Javascript\bootstrap.min.js" />
+    <Content Include="Javascript\cbpAnimatedHeader.js" />
+    <Content Include="Javascript\cbpAnimatedHeader.min.js" />
+    <Content Include="Javascript\classie.js" />
+    <Content Include="Javascript\footable.bookmarkable.js" />
+    <Content Include="Javascript\footable.filter.js" />
+    <Content Include="Javascript\footable.grid.js" />
+    <Content Include="Javascript\footable.js" />
+    <Content Include="Javascript\footable.memory.js" />
+    <Content Include="Javascript\footable.paginate.js" />
+    <Content Include="Javascript\footable.plugin.template.js" />
+    <Content Include="Javascript\footable.sort.js" />
+    <Content Include="Javascript\footable.striping.js" />
+    <Content Include="Javascript\jquery 1.9.1.js" />
+    <Content Include="Javascript\jquery-1.11.1.js" />
+    <Content Include="Javascript\jquery-1.8.2.js" />
+    <Content Include="Javascript\jquery-1.9.1.min.js" />
+    <Content Include="Javascript\jquery-2.1.1.js" />
+    <Content Include="Javascript\jquery.js" />
+    <Content Include="Javascript\npm.js" />
+    <Content Include="Loginres.aspx" />
+    <Content Include="main.css" />
+    <Content Include="MakePayment.aspx" />
+    <Content Include="MasterStyleSheet.css" />
+    <Content Include="UpdateBill.aspx" />
+    <Content Include="ViewAllandSearchBill.aspx" />
+    <Content Include="ViewAllandSearchPayment.aspx" />
+    <Content Include="ViewBill.aspx" />
+    <Content Include="ViewBillbyAdmin.aspx" />
+    <Content Include="ViewBillItem.aspx" />
+    <Content Include="ViewBillItembyAdmin.aspx" />
+    <Content Include="ViewOneBillItem.aspx" />
+    <Content Include="ViewSinglePayment.aspx" />
+    <Content Include="ViewSinglePaymentAdmin.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About Us.aspx.cs">
+      <DependentUpon>About Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About Us.aspx.designer.cs">
+      <DependentUpon>About Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddBill.aspx.cs">
+      <DependentUpon>AddBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddBill.aspx.designer.cs">
+      <DependentUpon>AddBill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BillPaymentAdmin.master.cs">
+      <DependentUpon>BillPaymentAdmin.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BillPaymentAdmin.master.designer.cs">
+      <DependentUpon>BillPaymentAdmin.master</DependentUpon>
+    </Compile>
+    <Compile Include="BillPaymentCustomer.master.cs">
+      <DependentUpon>BillPaymentCustomer.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BillPaymentCustomer.master.designer.cs">
+      <DependentUpon>BillPaymentCustomer.master</DependentUpon>
+    </Compile>
+    <Compile Include="Contact Us.aspx.cs">
+      <DependentUpon>Contact Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact Us.aspx.designer.cs">
+      <DependentUpon>Contact Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerHome.aspx.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerHome.aspx.designer.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisputeAdd.aspx.cs">
+      <DependentUpon>DisputeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisputeAdd.aspx.designer.cs">
+      <DependentUpon>DisputeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisputeUpdateAdmin.aspx.cs">
+      <DependentUpon>DisputeUpdateAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisputeUpdateAdmin.aspx.designer.cs">
+      <DependentUpon>DisputeUpdateAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisputeViewAllandSearch.aspx.cs">
+      <DependentUpon>DisputeViewAllandSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisputeViewAllandSearch.aspx.designer.cs">
+      <DependentUpon>DisputeViewAllandSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisputeViewCustomer.aspx.cs">
+      <DependentUpon>DisputeViewCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisputeViewCustomer.aspx.designer.cs">
+      <DependentUpon>DisputeViewCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerView.aspx.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerView.aspx.designer.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login1.Master.cs">
+      <DependentUpon>Login1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login1.Master.designer.cs">
+      <DependentUpon>Login1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Loginres.aspx.cs">
+      <DependentUpon>Loginres.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loginres.aspx.designer.cs">
+      <DependentUpon>Loginres.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakePayment.aspx.cs">
+      <DependentUpon>MakePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakePayment.aspx.designer.cs">
+      <DependentUpon>MakePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateBill.aspx.cs">
+      <DependentUpon>UpdateBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateBill.aspx.designer.cs">
+      <DependentUpon>UpdateBill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllandSearchBill.aspx.cs">
+      <DependentUpon>ViewAllandSearchBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAllandSearchBill.aspx.designer.cs">
+      <DependentUpon>ViewAllandSearchBill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllandSearchPayment.aspx.cs">
+      <DependentUpon>ViewAllandSearchPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAllandSearchPayment.aspx.designer.cs">
+      <DependentUpon>ViewAllandSearchPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBill.aspx.cs">
+      <DependentUpon>ViewBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBill.aspx.designer.cs">
+      <DependentUpon>ViewBill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBillbyAdmin.aspx.cs">
+      <DependentUpon>ViewBillbyAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBillbyAdmin.aspx.designer.cs">
+      <DependentUpon>ViewBillbyAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBillItem.aspx.cs">
+      <DependentUpon>ViewBillItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBillItem.aspx.designer.cs">
+      <DependentUpon>ViewBillItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBillItembyAdmin.aspx.cs">
+      <DependentUpon>ViewBillItembyAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBillItembyAdmin.aspx.designer.cs">
+      <DependentUpon>ViewBillItembyAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOneBillItem.aspx.cs">
+      <DependentUpon>ViewOneBillItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewOneBillItem.aspx.designer.cs">
+      <DependentUpon>ViewOneBillItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSinglePayment.aspx.cs">
+      <DependentUpon>ViewSinglePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSinglePayment.aspx.designer.cs">
+      <DependentUpon>ViewSinglePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSinglePaymentAdmin.aspx.cs">
+      <DependentUpon>ViewSinglePaymentAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSinglePaymentAdmin.aspx.designer.cs">
+      <DependentUpon>ViewSinglePaymentAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master.Master" />
+    <Content Include="BillPaymentCustomer.master" />
+    <Content Include="BillPaymentAdmin.master" />
+    <Content Include="font-awesome-4.1.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome-4.1.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome-4.1.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome-4.1.0\fonts\FontAwesome.otf" />
+    <Content Include="font-awesome-4.1.0\less\bordered-pulled.less" />
+    <Content Include="font-awesome-4.1.0\less\core.less" />
+    <Content Include="font-awesome-4.1.0\less\fixed-width.less" />
+    <Content Include="font-awesome-4.1.0\less\font-awesome.less" />
+    <Content Include="font-awesome-4.1.0\less\icons.less" />
+    <Content Include="font-awesome-4.1.0\less\larger.less" />
+    <Content Include="font-awesome-4.1.0\less\list.less" />
+    <Content Include="font-awesome-4.1.0\less\mixins.less" />
+    <Content Include="font-awesome-4.1.0\less\path.less" />
+    <Content Include="font-awesome-4.1.0\less\rotated-flipped.less" />
+    <Content Include="font-awesome-4.1.0\less\spinning.less" />
+    <Content Include="font-awesome-4.1.0\less\stacked.less" />
+    <Content Include="font-awesome-4.1.0\less\variables.less" />
+    <Content Include="font-awesome-4.1.0\scss\font-awesome.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_bordered-pulled.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_core.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_fixed-width.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_icons.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_larger.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_list.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_mixins.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_path.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_rotated-flipped.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_spinning.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_stacked.scss" />
+    <Content Include="font-awesome-4.1.0\scss\_variables.scss" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Login1.Master" />
+    <None Include="Properties\PublishProfiles\TEAM_E_TMS65.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BEP.BLL\BEP.BLL.csproj">
+      <Project>{31ff5775-7568-4c39-9ea5-0ce5b2ef3468}</Project>
+      <Name>BEP.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEP.BLL_FACTORY\BEP.BLL_FACTORY.csproj">
+      <Project>{010ef69a-8283-4f50-af36-d856c75ce768}</Project>
+      <Name>BEP.BLL_FACTORY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEP.BO\BEP.BO.csproj">
+      <Project>{78d62d18-3686-4b62-9173-b916eb061da1}</Project>
+      <Name>BEP.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEP.BO_FACTORY\BEP.BO_FACTORY.csproj">
+      <Project>{35f6782e-ac44-40c9-b4a3-f53fa329ef52}</Project>
+      <Name>BEP.BO_FACTORY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEP.DAL\BEP.DAL.csproj">
+      <Project>{a52a9492-9a92-4251-93be-88251fc32824}</Project>
+      <Name>BEP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEP.DAL_FACTORY\BEP.DAL_FACTORY.csproj">
+      <Project>{d2131442-d515-4ace-8083-570f67d76937}</Project>
+      <Name>BEP.DAL_FACTORY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEP.TYPES\BEP.TYPES.csproj">
+      <Project>{4fae40e3-b755-4118-ba70-2d20bd64256e}</Project>
+      <Name>BEP.TYPES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEP.TYPES\BEP.TYPES.csproj">
+      <Project>{4fae40e3-b755-4118-ba70-2d20bd64256e}</Project>
+      <Name>BEP.TYPES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50819/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

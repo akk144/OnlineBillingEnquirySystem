@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="BillPaymentCustomer.master.cs" Inherits="WebApplication1.BillPayment" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link rel="stylesheet" href="CSS/bootstrap-responsive.min.css" />
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <header>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Bharat Tele Services</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="CustomerHome.aspx">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="Contact Us.aspx">Contact Us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="About Us.aspx">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="Loginres.aspx">Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    </header>
+
+
+    <%-- <!--start: Navigation -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="social-icons.html">Social Icons</a></li>
+                            <li><a href="icons.html">Icons</a></li>
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="shortcodes.html">Shortcodes</a></li>
+                            <li><a href="list-styles.html">List Styles</a></li>
+                        </ul>
+        </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio3.html">3 Columns</a></li>
+                            <li><a href="portfolio4.html">4 Columns</a></li>
+            </ul>
+        </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end: Navigation -->--%>
+    
+     <br />
+    <br />
+    <br />
+        <asp:SiteMapPath ID="SiteMapPath1"  runat="server"></asp:SiteMapPath>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--</asp:Panel>--%>
+     <script src="Javascript/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Javascript/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="Javascript/classie.js"></script>
+    <script src="Javascript/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <%--<script src="Javascript/jqBootstrapValidation.js"></script>--%>
+<%--    <script src="Javascript/contact_me.js"></script>--%>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="Javascript/agency.js"></script>
+</asp:Content>

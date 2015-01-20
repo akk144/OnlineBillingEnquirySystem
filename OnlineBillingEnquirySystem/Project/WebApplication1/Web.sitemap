@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="You are Here"  description="">
+    <siteMapNode url="AdminHome.aspx" title="Home"  description="">
+      <siteMapNode url="ViewAllandSearchPayment.aspx" title="ViewAllandSearchPayment"  description="ViewAllandSearchPayment">
+        <siteMapNode url="ViewSinglePaymentAdmin.aspx" title="ViewSinglePayment"  description="ViewSinglePayment"/>
+        </siteMapNode>
+        <siteMapNode url="ViewAllandSearchBill.aspx" title="ViewAllandSearchBill"  description="ViewAllandSearchBill">
+          <siteMapNode url="ViewBillbyAdmin.aspx" title="View Bill"  description="View Bill">
+            <siteMapNode url="ViewBillItembyAdmin.aspx" title="ViewBillItem"  description="ViewBillItem"/>
+          </siteMapNode>
+          <siteMapNode url="ViewOneBillItem.aspx" title="ViewOneBillItem"  description="ViewOneBillItem" />
+        </siteMapNode>
+        <siteMapNode url="UpdateBill.aspx" title="UpdateBill"  description="UpdateBill"/>
+        <siteMapNode url="AddBill.aspx" title="AddBill"  description="AddBill"/>
+        <siteMapNode url="DisputeViewAllandSearch.aspx" title="ViewAllandSearchDispute"  description="Viewallandsearch"/>
+        <siteMapNode url="DisputeUpdateAdmin.aspx" title="DisputeUpdate"  description="DisputeUpdate"/>
+      </siteMapNode>
+
+      <siteMapNode url="CustomerHome.aspx" title="Home"  description="">
+        <siteMapNode url="MakePayment.aspx" title="MakePayment"  description="MakePayment" />
+        <siteMapNode url="CustomerView.aspx" title="ViewPayment"  description="ViewPayment">
+          <siteMapNode url="ViewSinglePayment.aspx" title="ViewSinglePayment"  description="ViewSinglePayment"/>
+        </siteMapNode> 
+        <siteMapNode url="ViewBill.aspx" title="ViewBill"  description="ViewBill">
+          <siteMapNode url="ViewBillItem.aspx" title="ViewBillItem"  description="ViewBillItem"/>
+        </siteMapNode>
+        <siteMapNode url="DisputeAdd.aspx" title="AddDispute"  description="AddDispute"/>
+        <siteMapNode url="DisputeViewCustomer.aspx" title="ViewDispute"  description="ViewDispute"/>
+      </siteMapNode>
+    </siteMapNode>
+  </siteMap>

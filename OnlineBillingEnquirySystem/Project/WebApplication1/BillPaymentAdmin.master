@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="BillPaymentAdmin.master.cs" Inherits="WebApplication1.BillPaymentAdmin" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">Bharat Tele Services</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="AdminHome.aspx">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="Contact Us.aspx">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="About Us.aspx">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="Loginres.aspx">Logout</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <%-- <nav>
+        <ul class="menu-bar">
+            <li class="active"><a href="AdminHome.aspx">Home</a></li>
+
+            <li><a href="#">Bill Generation</a>
+                <ul>
+                    <li><a href="AddBill.aspx">Generate Bill</a></li>
+                    <li><a href="ViewAllandSearchBill.aspx">View All and Search</a></li>
+                    <li><a href="UpdateBill.aspx">Update Bill</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Bill Payment</a>
+                <ul>
+                    <li><a href="ViewAllandSearchPayment.aspx">View All and Search</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Bill Dispute</a>
+                <ul>
+                    <li><a href="DisputeViewAllandSearch.aspx">View All and Search</a></li>
+                    <li><a href="DisputeUpdateAdmin.aspx">Update dispute</a></li>
+
+                </ul>
+            </li>
+            <%--<li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="Login.aspx">Log Out</a></li>
+        </ul>
+    </nav>--%>
+
+    <%-- <section class="container">
+        <section class="leftpanel">
+            
+            </section>
+
+   </section>--%>
+
+    <%--<div>
+        <div>
+            <ul>
+                <%--<li><a href="www.google.com"><span>Home</span></a></li>
+                <li><a href="www.google.com"><span>Generate Bill</span></a></li>
+                <li><a href="www.google.com"><span>View All and Search</span></a></li>
+                <li><a href="www.google.com"><span>Work</span></a></li>
+                <li><a href="www.google.com"><span>Contact</span></a></li>--%>
+
+    <%-- <asp:Menu ID="Menu1" Font-Size="Medium" runat="server" Orientation="Horizontal" StaticMenuItemStyle-HorizontalPadding="15px" ForeColor="Black" OnMenuItemClick="Menu1_MenuItemClick" DynamicMenuStyle-BackColor="gray">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="#" Text="Home" Value="Home" Selectable="true"></asp:MenuItem>
+
+                        <asp:MenuItem NavigateUrl="#" Text="Bill Generation" Value="Home" Selectable="true">
+                            <asp:MenuItem NavigateUrl="~/AddBill.aspx" Text="Generate Bill" Value="Bill Process"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ViewAllandSearchBill.aspx" Text="View All and Search" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/UpdateBill.aspx" Text="Update Bill" Value="About US"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="Bill Payment" Value="Bill Payment Process">
+                            <asp:MenuItem NavigateUrl="~/ViewAllandSearchPayment.aspx" Text="ViewAll and Search" Value="View Payment"></asp:MenuItem>
+                            <%-- <asp:MenuItem NavigateUrl="~/AdminSearch.aspx" Text="SearchPayment" Value="View Payment"></asp:MenuItem>--%>
+    <%--     </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="Bill Dispute">
+
+                            <asp:MenuItem NavigateUrl="~/DisputeViewAllandSearch.aspx" Text="View All and Search"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/DisputeUpdateAdmin.aspx" Text="Update dispute"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About Us.aspx" Text="About Us" Value="About US"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Contact Us.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Login.aspx" Text="LogOut" Value="Log Out"></asp:MenuItem>
+
+
+                    </Items>
+                </asp:Menu>
+                <br />
+                <br />
+                <br />
+                <br />
+        </div>
+    </div>--%>
+
+
+    <%--asp:Menu ID="Menu1"  Font-Size="Medium" runat="server" Orientation="Horizontal" StaticMenuItemStyle-HorizontalPadding="15px" ForeColor="Black">
+                <Items>
+                    <asp:MenuItem NavigateUrl="#" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AddBill.aspx" Text="Generate Bill" Value="Bill Process">
+                    <asp:MenuItem NavigateUrl="~/ViewAllandSearchBill.aspx" Text="View All and Search" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UpdateBill.aspx" Text="Update Bill" Value="About US"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="#" Text="Pay my Bills" Value="Bill Payment Process">
+                    <asp:MenuItem NavigateUrl="~/AdminView.aspx" Text="ViewAllPayments" Value="Make Payment"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminSearch.aspx" Text="SearchPayment" Value="View Payment"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="#" Text="Bill Dispute" Value="Bill Payment Process">
+                    <asp:MenuItem NavigateUrl="~/DisputeViewallAdmin.aspx" Text="View All Dispute" Value="Make Payment"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/DisputeViewAllByIdAdmin.aspx" Text="View All Dispute by id" Value="View Payment"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/DisputeUpdateAdmin.aspx" Text="Update dispute" Value="Make Payment"></asp:MenuItem>
+                    </asp:MenuItem>
+                   
+                    <asp:MenuItem NavigateUrl="~/About Us.aspx" Text="About Us" Value="About US"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Contact Us.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/Login.aspx" Text="LogOut" Value="Log Out"></asp:MenuItem>
+                </Items>
+         </asp:Menu>--%>
+    <%-- 
+    <ajax:collapsiblepanelextender ID="CollapsiblePanelExtender1" runat="server" TargetControlID="pBody1" CollapseControlID="pHeader1" ExpandControlID="pHeader1"
+Collapsed="true" TextLabelID="Label1" CollapsedText="Bill Generate" 
+CollapsedSize="0">
+            </ajax:collapsiblepanelextender>
+        <ajax:collapsiblepanelextender ID="CollapsiblePanelExtender2" runat="server" TargetControlID="pBody2" CollapseControlID="pHeader2" ExpandControlID="pHeader2"
+Collapsed="true" TextLabelID="Label2" CollapsedText="Bill Payment" 
+CollapsedSize="0">
+            </ajax:collapsiblepanelextender>
+        <ajax:collapsiblepanelextender ID="CollapsiblePanelExtender3" runat="server" TargetControlID="pBody3" CollapseControlID="pHeader" ExpandControlID="pHeader3"
+Collapsed="true" TextLabelID="Label3" CollapsedText="Bill Dispute" 
+CollapsedSize="0">
+            </ajax:collapsiblepanelextender>--%>
+    <br />
+    <br />
+    <br />
+    <asp:SiteMapPath ID="SiteMapPath1"  runat="server"></asp:SiteMapPath>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+     <script src="Javascript/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Javascript/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="Javascript/classie.js"></script>
+    <script src="Javascript/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <%--<script src="Javascript/jqBootstrapValidation.js"></script>--%>
+<%--    <script src="Javascript/contact_me.js"></script>--%>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="Javascript/agency.js"></script>
+</asp:Content>
+
+
+
+
+
+
